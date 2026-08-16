@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+    老派散策 支援頁
+
+    ★ 這個檔案的用途
+      App Store Connect 的「支援 URL」是每個語系的必填欄位。
+      審核員會實際點進來看，確認使用者真的找得到求助管道——
+      只放一個沒有聯絡方式的首頁，是會被 Guideline 1.5 挑出來的。
+
+    ★ 為什麼中英並列而不做語言切換
+      跟 privacy.html 同一個理由：審核員多半看英文，
+      用 JavaScript 切換的話他若沒點到就只看到中文。
+      並列雖然長，但不會有「沒提供英文版」的風險。
+
+    ★ FAQ 的內容不是隨便寫的
+      前三題對應審核最常誤解的地方：
+      「為什麼有些老屋不能進去」（避免被當成資訊錯誤）、
+      「資料哪裡來」（對應內容版權宣告）、
+      「位置資料會不會被上傳」（對應隱私問卷與 xcprivacy）。
+      三邊說法必須一致，Apple 會交叉比對。
+-->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>支援 Support — 老派散策 Retro Taiwan</title>
+<style>
+  :root {
+    --ink: #2b2622;
+    --muted: #6b625a;
+    --rule: #e0d8ce;
+    --paper: #fbf8f3;
+    --accent: #8a5a3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #ece5dc;
+      --muted: #a49a8f;
+      --rule: #3a342e;
+      --paper: #1b1815;
+      --accent: #c9976a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    background: var(--paper);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0 0 .35rem; letter-spacing: .02em; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 3rem 0 .75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 { font-size: 1rem; margin: 1.75rem 0 .4rem; }
+  .sub { color: var(--muted); margin: 0 0 .25rem; }
+  .date { color: var(--muted); font-size: .9rem; }
+  .lede { margin: 1.5rem 0 0; }
+  a { color: var(--accent); }
+  .contact {
+    margin: 1.5rem 0 0;
+    padding: 1.25rem 1.4rem;
+    border: 1px solid var(--rule);
+    border-radius: .6rem;
+  }
+  .contact p { margin: .35rem 0; }
+  .contact .email { font-size: 1.05rem; }
+  dl { margin: 0; }
+  dt { font-weight: 600; margin: 1.6rem 0 .3rem; }
+  dd { margin: 0; color: var(--ink); }
+  .divider { border: 0; border-top: 1px solid var(--rule); margin: 4rem 0 0; }
+  footer { margin-top: 2.5rem; color: var(--muted); font-size: .9rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+
+<!-- ───────────────── 繁體中文 ───────────────── -->
+
+<h1>支援</h1>
+<p class="sub">老派散策 Retro Taiwan</p>
+<p class="date">最後更新：2026 年 8 月</p>
+
+<p class="lede">
+  使用上有任何問題、發現資料有誤，或想告訴我哪裡不好用，都歡迎來信。
+  這是一個人做的 App，回信可能不會太快，但每一封都會看。
+</p>
+
+<div class="contact">
+  <p class="email"><strong>聯絡信箱：</strong>
+    <a href="mailto:mmmmmmm7@gmail.com">mmmmmmm7@gmail.com</a></p>
+  <p class="sub">回覆時間通常在三個工作天內。</p>
+</div>
+
+<h2>常見問題</h2>
+
+<dl>
+  <dt>為什麼有些老屋標示「僅外觀可看」或「狀態不詳」？</dt>
+  <dd>
+    收錄的是依法登錄的古蹟與歷史建築，其中很多仍是私人住宅、辦公處所，
+    或尚未開放參觀。App 會標示開放狀態，請尊重現況，不要進入未開放的建築或打擾住戶。
+    狀態如有變動，歡迎來信告知。
+  </dd>
+
+  <dt>資料是從哪裡來的？</dt>
+  <dd>
+    全部來自文化部文化資產局的公開資料，依「政府資料開放授權條款－第 1 版」釋出。
+    App 內每一筆資料都標示了來源。若發現與現況不符，通常是原始開放資料尚未更新，
+    來信告訴我，我會在下次更新時處理。
+  </dd>
+
+  <dt>我的位置資料會被上傳嗎？</dt>
+  <dd>
+    不會。定位只在你的裝置上用來計算距離與排序，從不離開裝置。
+    足跡與收藏存在你自己的 iCloud 私有資料庫，開發者沒有存取權。
+    詳見<a href="privacy.html">隱私權政策</a>。
+  </dd>
+
+  <dt>買了「支持開發」之後廣告還在？</dt>
+  <dd>
+    請到「我的」分頁點「回復購買」。若仍未生效，來信附上購買時的 Apple 收據，我會協助處理。
+  </dd>
+
+  <dt>換手機之後，我的足跡與收藏會跟著走嗎？</dt>
+  <dd>
+    只要新舊裝置登入同一個 Apple 帳號並開啟 iCloud，資料會自動同步。
+  </dd>
+
+  <dt>可以離線使用嗎？</dt>
+  <dd>
+    點位資料存在裝置上，沒有網路也能瀏覽清單與詳細資料。
+    但地圖圖磚與導航需要連線。
+  </dd>
+</dl>
+
+<hr class="divider">
+
+<!-- ───────────────── English ───────────────── -->
+
+<h1>Support</h1>
+<p class="sub">Retro Taiwan 老派散策</p>
+<p class="date">Last updated: August 2026</p>
+
+<p class="lede">
+  If something isn't working, you've spotted incorrect data, or you just want to tell me
+  what's awkward to use, please get in touch. This app is made by one person, so replies
+  may not be instant — but every message gets read.
+</p>
+
+<div class="contact">
+  <p class="email"><strong>Email:</strong>
+    <a href="mailto:mmmmmmm7@gmail.com">mmmmmmm7@gmail.com</a></p>
+  <p class="sub">Typical response time: within three business days.</p>
+</div>
+
+<h2>Frequently asked questions</h2>
+
+<dl>
+  <dt>Why are some buildings marked "exterior only" or "status unknown"?</dt>
+  <dd>
+    The app catalogs legally designated heritage sites and historic buildings, many of which
+    are still private homes, offices, or simply not open to the public. The app shows each
+    building's access status — please respect it, and don't enter closed buildings or disturb
+    residents. If a status has changed, let me know.
+  </dd>
+
+  <dt>Where does the data come from?</dt>
+  <dd>
+    Entirely from the Bureau of Cultural Heritage, Ministry of Culture (Taiwan), released
+    under the Open Government Data License, version 1.0. Every entry in the app credits its
+    source. If something doesn't match reality, it's usually because the source data hasn't
+    been updated yet — email me and I'll address it in the next release.
+  </dd>
+
+  <dt>Is my location data uploaded anywhere?</dt>
+  <dd>
+    No. Location is used on your device only, to calculate distances and sort nearby places.
+    It never leaves your device. Check-ins and favorites live in your own private iCloud
+    database, which the developer cannot access. See the
+    <a href="privacy.html">privacy policy</a> for details.
+  </dd>
+
+  <dt>I purchased "Support the developer" but ads are still showing.</dt>
+  <dd>
+    Go to the Profile tab and tap "Restore Purchases." If that doesn't work, email me with
+    your Apple receipt and I'll sort it out.
+  </dd>
+
+  <dt>Will my check-ins and favorites transfer to a new phone?</dt>
+  <dd>
+    Yes — as long as both devices are signed into the same Apple Account with iCloud enabled,
+    your data syncs automatically.
+  </dd>
+
+  <dt>Does it work offline?</dt>
+  <dd>
+    Place data is stored on your device, so you can browse listings and details without a
+    connection. Map tiles and directions do require network access.
+  </dd>
+</dl>
+
+<footer>
+  <a href="index.html">首頁 Home</a> ·
+  <a href="privacy.html">隱私權政策 Privacy Policy</a>
+</footer>
+
+</main>
+</body>
+</html>
